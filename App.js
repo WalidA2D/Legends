@@ -1,20 +1,44 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Ionicons } from '@expo/vector-icons';
+import Home from './home/Home';
+import Character from './Perso/Character';
+import About from './aPropos/About';
+import GameMap from './Map/Map';
 
-export default function App() {
+const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ color, size }) => {
+            let iconName;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+            if (route.name === 'Home') {
+              iconName = 'home';
+            } else if (route.name === 'Personnages') {
+              iconName = 'person';
+            } else if (route.name === 'A Propos') {
+              iconName = 'information-circle';
+            }
+
+            // Vous pouvez retourner l'icône correspondante ici
+            return <Ionicons name={iconName} size={size} color={color} />;
+          },
+        })}
+      >
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Personnages" component={Character} />
+        <Tab.Screen name="A Propos" component={About} />
+        <Stack.Screen name="GameMap" component={GameMap} options={{ title: 'Carte de jeu' }} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
