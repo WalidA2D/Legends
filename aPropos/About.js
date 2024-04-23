@@ -76,7 +76,7 @@ function About() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#fff', 
   },
   scrollView: {
     flex: 1,
@@ -91,17 +91,19 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 12,
+    color: '#3B5998', 
   },
   subtitle: {
     fontSize: 15,
-    fontWeight: 'bold',
     marginTop: 12,
     marginBottom: 6,
+    color: '#3B5998',  
   },
   paragraph: {
-    fontSize: 12,
+    fontSize: 14,
     textAlign: 'justify',
     marginBottom: 12,
+    color: 'black',  
   },
   centeredView: {
     width: '80%',
@@ -109,21 +111,22 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     height: 40,
-    borderColor: '#ccc',
+    borderColor: '#3B5998', 
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 10,
     paddingHorizontal: 10,
+    color: 'black',
   },
   sendButton: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#3B5998',  
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
     alignItems: 'center',
   },
   sendButtonText: {
-    color: 'black',
+    color: '#C0C0C0', 
     fontWeight: 'bold',
   },
 });

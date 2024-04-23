@@ -2,14 +2,15 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Ionicons } from '@expo/vector-icons';
+import { Image } from 'react-native';
+import { Colors } from './colors'; 
 import Home from './home/Home';
 import Character from './Perso/Character';
 import About from './aPropos/About';
 import GameMap from './Map/Map';
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createStackNavigator(); 
 
 const App = () => {
   return (
@@ -17,19 +18,22 @@ const App = () => {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
-            let iconName;
+            let iconSource;
 
             if (route.name === 'Home') {
-              iconName = 'home';
+              iconSource = require('./assets/home-removebg-preview.png');
             } else if (route.name === 'Personnages') {
-              iconName = 'person';
+              iconSource = require('./assets/personnages-removebg-preview.png');
             } else if (route.name === 'A Propos') {
-              iconName = 'information-circle';
+              iconSource = require('./assets/about.png');
+            } else if (route.name === 'GameMap') {
+              iconSource = require('./assets/maps-logo-removebg-preview.png');
             }
 
-            // Vous pouvez retourner l'icône correspondante ici
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <Image source={iconSource} style={{ width: size, height: size, tintColor: color }} />;
           },
+          tabBarActiveTintColor: Colors.mysticBlue, 
+          tabBarInactiveTintColor: Colors.silverGray, 
         })}
       >
         <Tab.Screen name="Home" component={Home} />
