@@ -21,8 +21,3 @@ Ce rapport détaille le processus de développement de l'application mobile "Leg
    - **Moyen de Nous Contacter:** Un formulaire de contact intégré permettant aux utilisateurs de soumettre leurs questions, commentaires ou préoccupations directement depuis l'application.
    - **Carte du Jeu:** Une fonctionnalité de carte interactive permettant aux utilisateurs de naviguer dans l'univers du jeu et d'explorer différents lieux et régions.
 2. **Intégration de Fonctionnalités Bonus:** En plus des fonctionnalités principales, nous avons intégré des fonctionnalités bonus telles que l'envoi de mails depuis le formulaire de contact. Cela permet aux utilisateurs de contacter facilement l'équipe de développement pour toute question ou assistance supplémentaire.
-
-## Conclusion
-Le développement de l'application mobile "Legends of Xefi" a été une expérience enrichissante, malgré les défis rencontrés en cours de route. Grâce à une collaboration étroite au sein de l'équipe de développement et avec les autres équipes impliquées dans le projet, nous avons pu surmonter ces obstacles et livrer une application de haute qualité qui répond aux besoins de nos utilisateurs.
-
---- 
