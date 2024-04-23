@@ -1,4 +1,3 @@
-[![React Native version](https://img.shields.io/badge/React%20Native-0.64.3-blue)](https://facebook.github.io/react-native/) [![Node.js version](https://img.shields.io/badge/Node.js-16.14.0-green)](https://nodejs.org/) [![JavaScript version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 # Rapport de Projet: Développement de l'Application Mobile "Legends of Xefi"
 
 ## Introduction
