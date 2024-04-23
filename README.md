@@ -1,18 +1,18 @@
-## Rapport de Projet: Développement de l'Application Mobile "Legends of Xefi"
+# Rapport de Projet: Développement de l'Application Mobile "Legends of Xefi"
 Introduction
 Ce rapport détaille le processus de développement de l'application mobile "Legends of Xefi", réalisé par l'équipe de développement de Mystic Forge Studios. Le projet visait à créer une application de type "wiki" permettant aux joueurs d'explorer les personnages et l'univers du jeu "Legends of Xefi".
 
-# Choix de Conception
+## Choix de Conception
 1. ### Framework: Nous avons choisi d'utiliser React Native comme framework de développement pour assurer la portabilité de l'application entre les plateformes Android et iOS, tout en offrant une expérience utilisateur fluide et réactive.
 2. ### Architecture: Nous avons opté pour une architecture basée sur les composants, en suivant les bonnes pratiques de développement React Native. Cela nous a permis de diviser l'application en composants réutilisables, facilitant ainsi la maintenance et l'extension de l'application.
 3. ### Interface Utilisateur: Nous avons suivi la charte graphique fournie, en utilisant les couleurs principales "Bleu Mystique" et "Gris Argenté" pour l'interface utilisateur. Les tailles de police spécifiées ont également été respectées pour garantir une hiérarchie claire de l'information.
-# Défis Rencontrés
+## Défis Rencontrés
 1. ### Intégration de l'API: L'un des principaux défis a été l'intégration de l'API fournissant les données sur les personnages du jeu. Bien que l'API soit bien documentée, certaines fonctionnalités requises n'étaient pas disponibles initialement. Nous avons dû travailler en étroite collaboration avec l'équipe en charge de l'API pour ajouter les fonctionnalités manquantes et résoudre les problèmes d'authentification.
 2. ### Gestion de l'Asynchronisme: En raison de la nature asynchrone des appels API, la gestion de l'état de l'application et la mise à jour des données se sont avérées complexes. Nous avons rencontré des difficultés pour maintenir la cohérence des données affichées à l'écran et pour gérer les cas d'erreur de manière élégante.
 3. ### Compatibilité entre les Plateformes: Assurer la compatibilité entre les différentes versions d'Android et d'iOS a été un défi majeur. Nous avons dû effectuer des tests approfondis sur une variété d'appareils pour nous assurer que l'application fonctionnait correctement sur toutes les plateformes cibles.
-# Solutions Implémentées
+## Solutions Implémentées
 1. ### Refonte de l'Architecture: Pour résoudre les problèmes liés à la gestion de l'asynchronisme, nous avons repensé l'architecture de l'application en adoptant le modèle Redux pour la gestion de l'état global. Cela nous a permis de centraliser la gestion de l'état de l'application et de simplifier la gestion des données asynchrones.
 2. ### Optimisation des Performances: Pour améliorer les performances de l'application, nous avons mis en œuvre des techniques telles que le chargement progressif des données et la mise en cache des requêtes API. Cela a permis de réduire les temps de chargement et d'optimiser l'expérience utilisateur, surtout sur les réseaux lents.
 3. ### Tests Rigoureux: Nous avons mis en place un processus de test rigoureux, comprenant des tests unitaires, des tests d'intégration et des tests de compatibilité entre les plateformes. Cela nous a permis d'identifier et de résoudre les problèmes potentiels avant le déploiement de l'application.
-# Conclusion
+## Conclusion
 Le développement de l'application mobile "Legends of Xefi" a été une expérience enrichissante, malgré les défis rencontrés en cours de route. Grâce à une collaboration étroite au sein de l'équipe de développement et avec les autres équipes impliquées dans le projet, nous avons pu surmonter ces obstacles et livrer une application de haute qualité qui répond aux besoins de nos utilisateurs.
